@@ -2,7 +2,7 @@
     "client_id": "https://obsidat.github.io/oauth/client-metadata.json",
     "client_name": "obsidat",
     "client_uri": "https://obsidat.github.io",
-    "redirect_uris": ["https://obsidat.github.io/oauth/"],
+    "redirect_uris": ["https://obsidat.github.io/oauth/redirect.html"],
     "scope": "atproto transition:generic",
     "grant_types": ["authorization_code", "refresh_token"],
     "response_types": ["code"],
