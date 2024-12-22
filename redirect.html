@@ -15,6 +15,11 @@
       pre.append(document.location.hash.slice(1));
       document.body.append(p);
       document.body.append(pre);
+      
+      // this is optional, but after retrieving the parameters, we should ideally
+      // scrub it from history to prevent this authorization state to be replayed,
+      // just for good measure.
+      history.replaceState(null, '', location.pathname + location.search);
     </script>
   </body>
 </html>
