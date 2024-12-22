@@ -4,8 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OAuth Redirect</title>
+    <link rel="stylesheet" href="vanilla.css">
   </head>
   <body>
-    <div id="app"></div>
+    <script>
+      const p = document.createElement('h2');
+      p.append('Signed in. Copy and paste this into the popup in Obsidian:');
+
+      const pre = document.createElement('pre');
+      pre.append(document.location.hash.slice(1));
+      document.body.append(p);
+      document.body.append(pre);
+    </script>
   </body>
 </html>
